@@ -12,8 +12,9 @@ def add():
     return ''
 
 @app.route("/calculator/subtract", methods=['POST'])
-def subtract():
-    return ''
+def subtract(a,b):
+    val = a-b
+    return 'val'
 
 if __name__ == '__main__':
     app.run(port=8080,host='0.0.0.0')
